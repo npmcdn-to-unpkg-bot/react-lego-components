@@ -1,0 +1,25 @@
+._global {
+    // body {
+    //     width: 600px;
+    //     margin: 10px auto;
+    //     outline: solid 1px red;
+    // }
+    // body .testaa {
+    //     outline: solid 2px blue;
+    //     padding-left: 20px;
+    // }
+}
+& {
+
+    font-size: 20px;
+    color: red;
+    li {
+        color: red;
+    }
+    .test {
+        color: yellow;
+    }
+}
+
+li {
+}

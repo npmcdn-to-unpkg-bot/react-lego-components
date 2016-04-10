@@ -1,0 +1,26 @@
+& {
+    .nav {
+        display: -webkit-box;
+        display:-webkit-flex;
+        display:flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        background: #fff;
+        border-top: 1px solid #dce0e6;
+        border-bottom: 1px solid #dce0e6;
+
+        .nav-item {
+            height: 90px;
+            line-height: 90px;
+            color: #000;
+            font-size: 32px;
+            display: -webkit-box;
+            display:-webkit-flex;
+            display:flex;
+            dispaly: inline-box;
+            &.active {
+                color: #ff5460;
+            }
+        }
+    }
+}

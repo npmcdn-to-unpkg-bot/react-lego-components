@@ -1,0 +1,65 @@
+& {
+    background-color: #fff;
+    padding-top: 10px;
+    position: relative;
+    padding-left: 24px;
+    padding-right: 24px;
+    .line {
+        height: 60px;
+        border: solid 6px #ff5460;
+        position: absolute;
+        top: 10px;
+        left:0;
+    }
+    .title {
+        vertical-align: middle;
+        font-size: 28px;
+        color: #18191a;
+        padding: 28px 0;
+    }
+    .content-wraper {
+        height: 198px;
+    }
+    .column-wraper {
+        height: 90px;
+        .bless-info {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            padding-left: 20px;
+            font-size: 28px;
+            .bless-name {
+                margin-left: 20px;
+                font-size: 28px;
+                color: #18191a;
+            }
+            .bless-req {
+                margin-left: 20px;
+                color: #7a7c80;
+            }
+            .bless-num {
+                margin-left: 10px;
+                margin-right: 10px;
+                color: #ff5460;
+            }
+        }
+        .protrait {
+            display: inline-block;
+            width: 90px;
+            height: 90px;
+            border-radius: 45px;
+        }
+        .bless-btn {
+            float: right;
+            position: relative;
+            top: 20px;
+        }
+        .bless-btn::before, .bless-btn::after {
+            clear: both;
+            content: '.';
+            height:0;
+            visibility: hidden;
+        }
+    }
+
+}

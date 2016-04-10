@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>贴吧blitz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    (function() {
+        var base = 750;
+        var f = function() {
+            var scale = document.documentElement.clientWidth / base;
+            scale = screen.width / base;
+            var meta = document.querySelector('meta[name="viewport"]');
+            meta.setAttribute('content', 'width=' + base + ',initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale + ',user-scalable=no,target-densitydpi=device-dpi');
+        };
+        f();
+        window.onload = function () {
+            if (document.documentElement.clientWidth > 750) {
+                document.getElementById('react-dom').style.margin = '0 auto';
+                document.getElementById('react-dom').style.width = base + 'px';
+            }
+        }
+    })();
+    </script>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+</head>
+<body>
+    <div id="react-dom"></div>
+</body>
+<script type="text/javascript" src="./static/mod.js"></script>
+<script type="text/javascript" src="./index.jsx"></script>
+</html>
